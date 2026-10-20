@@ -30,7 +30,7 @@ Web制作のポートフォリオとして制作しました。院名・住所�
 │   ├── animation.js   … GSAP のアニメーション（木漏れ日エフェクトを含む）
 │   ├── form.js        … 予約フォームの入力チェック・デモ送信
 │   └── calc.js        … 回数券おトク計算（menu.html のみ）
-├── images/            … 画像（今は仮画像のSVG）、favicon.svg、ogp.png
+├── images/            … 写真（WebP）、イラスト地図・ファビコン（SVG）、ogp.png
 ├── docs/SPEC.md       … 仕様書
 └── .claude/           … 確認用の簡易サーバー（serve.ps1）と設定。公開には不要
 ```
@@ -44,6 +44,7 @@ Web制作のポートフォリオとして制作しました。院名・住所�
   - ヒーロー画像の控えめなパララックス
   - 院名「そよぎ」にちなんだ、ゆらゆら揺れる葉っぱ
   - スクロールするとヘッダーが白くなり影がつく
+- **写真**：Unsplash の無料写真16枚（クレジットは5章）
 - **追加ギミック**
   - **ただいま営業中バッジ**：今の時刻から「受付中／お昼休み中／本日の受付は終了・次回は○曜」を自動表示（トップ・アクセス・予約ページ）
   - **木漏れ日エフェクト**：ヒーローに、ゆっくり明滅する光の粒と、そよぐ葉影を重ねる演出
@@ -88,38 +89,36 @@ python -m http.server 8080
 
 ---
 
-## 5. 画像の差し替え手順
+## 5. 画像とクレジット
 
-今は `images/` に**仮画像（グレーのSVG）**が入っています。本番画像を用意したら、次の手順で差し替えます。
+写真はすべて [Unsplash](https://unsplash.com/) の無料写真（[Unsplash License](https://unsplash.com/license)）を使っています。
+商用・非商用を問わず無料で使え、クレジット表記は必須ではありませんが、撮影者への感謝として記載します。
+各写真は表示枠の比率に合わせて切り抜き、WebP 形式で保存しています。
 
-1. 画像を下のファイル名で `images/` に入れる（形式は `.webp` 推奨。`.jpg` でも可）
-2. HTML 内の参照の拡張子を `.svg` → `.webp` に置き換える
-   - VS Code なら「フォルダー内を置換」（Ctrl + Shift + H）で、検索 `images/((?!favicon|map)[a-z0-9-]+)\.svg` → 置換 `images/$1.webp`（正規表現をON）
-   - 上の検索式は `favicon.svg` と `map.svg`（どちらも完成品）を対象外にしています
-3. 不要になった仮画像のSVG（`favicon.svg`・`map.svg` 以外）を削除する
+| ファイル名 | 使用場所 | 撮影者 | 元の写真 |
+|---|---|---|---|
+| `hero.webp` | トップ ヒーロー（`ogp.png` にも使用） | Cherosi | [AV0KNliGvQc](https://unsplash.com/photos/AV0KNliGvQc) |
+| `reason-01.webp` | 選ばれる理由1 | Andre Benz | [PpsgIw3iWZ4](https://unsplash.com/photos/PpsgIw3iWZ4) |
+| `reason-02.webp` | 選ばれる理由2 | Sincerely Media | [CexT3n-04iw](https://unsplash.com/photos/CexT3n-04iw) |
+| `reason-03.webp` | 選ばれる理由3 | Sincerely Media | [wGFibXDQlBI](https://unsplash.com/photos/wGFibXDQlBI) |
+| `menu-shoulder.webp` | メニュー（肩・首） | yury kirillov | [Y1JKxNFwZx4](https://unsplash.com/photos/Y1JKxNFwZx4) |
+| `menu-back.webp` | メニュー（腰） | Benjamin Wedemeyer | [1rdB14ttWgQ](https://unsplash.com/photos/1rdB14ttWgQ) |
+| `menu-posture.webp` | メニュー（姿勢・骨盤） | Marc Zeman | [uLWW09LLG04](https://unsplash.com/photos/uLWW09LLG04) |
+| `menu-stretch.webp` | メニュー（ストレッチ） | yury kirillov | [pbUWW-CBoqY](https://unsplash.com/photos/pbUWW-CBoqY) |
+| `director.webp` | 院長紹介 | Russell Barrientos | [EGDTlFaO0mk](https://unsplash.com/photos/EGDTlFaO0mk) |
+| `staff.webp` | スタッフ紹介 | Vitaly Gariev | [qhrhmDZ6DTY](https://unsplash.com/photos/qhrhmDZ6DTY) |
+| `clinic-reception.webp` | 院内紹介（受付） | Maverick Frame | [VRoK8MxTlHY](https://unsplash.com/photos/VRoK8MxTlHY) |
+| `clinic-waiting.webp` | 院内紹介（待合） | Nguyễn Duy Hưng | [VEYPG3hY0eI](https://unsplash.com/photos/VEYPG3hY0eI) |
+| `clinic-room.webp` | 院内紹介（施術室） | Nightingale Home nurse | [4e017fuMeXE](https://unsplash.com/photos/4e017fuMeXE) |
+| `access-01.webp` | アクセス道順1 | TopoloGiraffe | [8DHMnWPhVpw](https://unsplash.com/photos/8DHMnWPhVpw) |
+| `access-02.webp` | アクセス道順2 | Qonita Afnani Firdaus | [XB2pBWNrhSI](https://unsplash.com/photos/XB2pBWNrhSI) |
+| `access-03.webp` | アクセス道順3 | Anya Chernykh | [kur6nW73WoQ](https://unsplash.com/photos/kur6nW73WoQ) |
 
-| ファイル名 | 使用場所 | 比率 | 入手 | 内容 |
-|---|---|---|---|---|
-| `hero.webp` | トップ ヒーロー | 16:9 | AI | 木漏れ日が差し込む明るい施術室（人物なし） |
-| `reason-01.webp` | 選ばれる理由1 | 4:3 | 素材 | 夜の駅前やビルの明かり、仕事帰りのイメージ |
-| `reason-02.webp` | 選ばれる理由2 | 4:3 | 素材 | 施術者が姿勢をチェックしている様子 |
-| `reason-03.webp` | 選ばれる理由3 | 4:3 | 素材 | 施術者が肩まわりを施術している様子 |
-| `menu-shoulder.webp` | メニュー | 4:3 | 素材 | 肩・首の施術 |
-| `menu-back.webp` | メニュー | 4:3 | 素材 | 腰の施術 |
-| `menu-posture.webp` | メニュー | 4:3 | 素材 | 姿勢矯正・骨盤の施術 |
-| `menu-stretch.webp` | メニュー | 4:3 | 素材 | ストレッチの施術 |
-| `director.webp` | 院長紹介 | 3:4 | 素材 | 30〜40代男性、笑顔 |
-| `staff.webp` | スタッフ紹介 | 3:4 | 素材 | 20〜30代女性施術者、笑顔 |
-| `clinic-reception.webp` | 院内紹介 | 4:3 | AI | 明るい受付カウンター |
-| `clinic-waiting.webp` | 院内紹介 | 4:3 | AI | 待合スペース |
-| `clinic-room.webp` | 院内紹介 | 4:3 | AI | 施術ベッドが並ぶ施術室 |
-| `access-01〜03.webp` | アクセス道順 | 4:3 | AI | 駅の出口、街路樹の通り、建物入口（看板の文字なし） |
-| `map.svg` | アクセス | 16:9 | 自作 | **作成済み**（SVGのイラスト地図）。差し替え不要。置換で `map.webp` にしないよう注意 |
-| `ogp.png` | SNS共有用 | 1200×630 | 自作 | 仮のものを作成済み。ヒーロー画像が決まったら作り直すとより良い |
+自作の画像：`map.svg`（イラスト地図）、`favicon.svg`（ファビコン）、`ogp.png`（SNS共有用。ヒーロー写真に院名とキャッチコピーを重ねたもの）
 
-- 人物が写る画像は写真素材サイト（ぱくたそ、写真AC、Unsplash など）から。**利用規約を必ず確認**してください。
-- 全体を「明るく、やわらかく、白〜グリーン寄りの色味」にそろえると統一感が出ます。
-- 画像の縦横比が違っても枠に合わせてトリミングされますが、上の比率に合わせると意図どおりに見えます。
+### 注意
+- 写真に写っている人物・場所は実在のもので、このサイトの院・人物・場所とは関係ありません（院長・スタッフの名前や紹介文は架空です）。
+- 写真を差し替えるときは、同じファイル名で `images/` に上書きすれば HTML の変更は不要です。
 
 ---
 

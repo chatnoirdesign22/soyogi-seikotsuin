@@ -19,6 +19,8 @@
 
   gsap.registerPlugin(ScrollTrigger);
   gsap.defaults({ ease: 'power2.out' });
+  // 描画が重い端末でも、表示アニメーションが実時間どおりに終わるようにする
+  gsap.ticker.lagSmoothing(0);
 
   /* ---------- 1. ページ読み込み時：ヒーロー ---------- */
   var heroItems = gsap.utils.toArray('[data-hero]');
