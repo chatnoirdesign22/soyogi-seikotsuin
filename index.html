@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>そよぎ整骨院・整体院｜緑ヶ丘駅徒歩3分・平日21時まで【架空サイト】</title>
+  <meta name="description" content="緑ヶ丘駅東口徒歩3分、平日21時まで・日曜も営業のそよぎ整骨院・整体院。デスクワークの肩こり・腰痛に、原因から向き合います。※ポートフォリオ用の架空サイトです。">
+  <meta name="robots" content="noindex">
+  <!-- OGP（SNSは相対パスを読めないため、公開URLの絶対パスで指定） -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="そよぎ整骨院・整体院（架空サイト）">
+  <meta property="og:title" content="そよぎ整骨院・整体院｜仕事帰りに、からだをリセット。">
+  <meta property="og:description" content="平日21時まで・駅徒歩3分。デスクワークの肩こり・腰痛に、原因から向き合う整骨院です。※ポートフォリオ用の架空サイトです。">
+  <meta property="og:url" content="https://riku08xx.github.io/soyogi-seikotsuin/index.html">
+  <meta property="og:image" content="https://riku08xx.github.io/soyogi-seikotsuin/images/ogp.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Quicksand:wght@500;700&family=Zen+Maru+Gothic:wght@500;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* JSが動き、視差効果を減らす設定でないときだけアニメーション用に要素を隠す */
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.documentElement.classList.add('js-anim');
+    }
+  </script>
+</head>
+<body>
+  <!-- アイコン定義（インラインSVGスプライト） -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="i-leaf" viewBox="0 0 64 64"><path d="M32 60C13 52 7 33 13 13c15 2 35 10 39 27 2 8-6 15-20 20z" fill="currentColor"/><path d="M30 55C26 41 24 29 17 18" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-leaf2" viewBox="0 0 64 64"><path d="M8 52C10 26 28 8 56 8c0 28-18 46-44 46z" fill="currentColor"/><path d="M10 54C22 40 32 30 46 18" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2.5" stroke-linecap="round"/></symbol>
+    <symbol id="i-tel" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z" fill="currentColor"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/></g></symbol>
+    <symbol id="i-line" viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.6 2 11c0 4 3.5 7.3 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s6-3.5 8.1-6C21.4 14.2 22 12.7 22 11c0-4.4-4.5-8-10-8zm-3.6 10.4H6.5c-.3 0-.5-.2-.5-.5V9.1c0-.3.2-.5.5-.5s.5.2.5.5v3.3h1.4c.3 0 .5.2.5.5s-.2.5-.5.5zm2 -.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.1c0-.3.2-.5.5-.5s.5.2.5.5v3.8zm4.6 0c0 .2-.1.4-.3.5h-.2c-.2 0-.3-.1-.4-.2l-2-2.6v2.3c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9.1c0-.2.1-.4.3-.5h.2c.2 0 .3.1.4.2l2 2.6V9.1c0-.3.2-.5.5-.5s.5.2.5.5v3.8zm3-2.4c.3 0 .5.2.5.5s-.2.5-.5.5h-1.4v.9H18c.3 0 .5.2.5.5s-.2.5-.5.5h-1.9c-.3 0-.5-.2-.5-.5V9.1c0-.3.2-.5.5-.5H18c.3 0 .5.2.5.5s-.2.5-.5.5h-1.4v.9H18z" fill="currentColor"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="currentColor"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7z" fill="currentColor"/></symbol>
+    <symbol id="i-branch" viewBox="0 0 200 200"><g fill="currentColor"><path d="M200 0C150 40 110 80 60 150" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="170" cy="40" rx="30" ry="12" transform="rotate(-30 170 40)"/><ellipse cx="150" cy="20" rx="26" ry="11" transform="rotate(-70 150 20)"/><ellipse cx="135" cy="75" rx="32" ry="13" transform="rotate(20 135 75)"/><ellipse cx="110" cy="60" rx="28" ry="11" transform="rotate(-60 110 60)"/><ellipse cx="100" cy="110" rx="30" ry="12" transform="rotate(25 100 110)"/><ellipse cx="75" cy="100" rx="26" ry="10" transform="rotate(-55 75 100)"/><ellipse cx="70" cy="150" rx="24" ry="10" transform="rotate(35 70 150)"/><ellipse cx="185" cy="70" rx="22" ry="9" transform="rotate(15 185 70)"/></g></symbol>
+    <symbol id="p-shirt" viewBox="0 0 48 48"><path d="M17 6l-11 7 5 9 5-3v23h16V19l5 3 5-9-11-7c-1 3-4 5-7 5s-6-2-7-5z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></symbol>
+    <symbol id="p-card" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="38" height="28" rx="4"/><circle cx="16" cy="22" r="4"/><path d="M10 32c1-3 3-5 6-5s5 2 6 5M27 20h10M27 26h8"/></g></symbol>
+    <symbol id="i-calc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="2.5" width="16" height="19" rx="2.5"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <!-- お悩みアイコン -->
+    <symbol id="w-shoulder" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="13" r="6"/><path d="M8 40c0-9 6-15 16-15s16 6 16 15"/><path d="M10 27l-4-4M38 27l4-4M13 22l-2-5M35 22l2-5"/></g></symbol>
+    <symbol id="w-neck" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="24" height="17" rx="2"/><path d="M12 31h12M18 25v6"/><circle cx="37" cy="17" r="5"/><path d="M34 22l-3 8M31 30c3 0 9 1 11 8"/></g></symbol>
+    <symbol id="w-back" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="9" r="5"/><path d="M20 14c-2 6-1 11 2 15h10v11M22 29l-8 11"/><path d="M8 34h12"/><path d="M33 20c3 1 5 3 6 6M36 16c4 1 7 5 8 9"/></g></symbol>
+    <symbol id="w-tired" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="17"/><path d="M16 21q3 2 6 0M26 21q3 2 6 0M18 32q6-3 12 0"/><path d="M36 8h6l-6 6h6"/></g></symbol>
+    <symbol id="w-clock" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="25" r="16"/><path d="M24 15v10l7 4M18 5h12"/></g></symbol>
+    <symbol id="w-repeat" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 22a14 14 0 0 1 24-9l4 4M38 9v8h-8"/><path d="M38 26a14 14 0 0 1-24 9l-4-4M10 39v-8h8"/></g></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <header class="site-header" id="site-header">
+    <p class="demo-band">このサイトはポートフォリオ用の架空サイトです</p>
+    <div class="header-bar">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="そよぎ整骨院・整体院 トップページ">
+          <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="#DCEBDD"/>
+            <path d="M33 52C19 46 15 33 19 18c11 2 25 8 28 20 1 6-4 11-14 14z" fill="#6BA37A"/>
+            <path d="M31 48c-3-10-5-19-10-27" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-text">
+            <span class="logo-name">そよぎ整骨院・整体院</span>
+            <span class="logo-en">SOYOGI SEIKOTSUIN</span>
+          </span>
+        </a>
+
+        <nav class="global-nav" id="global-nav" aria-label="メインメニュー">
+          <ul class="nav-list">
+            <li><a href="index.html" aria-current="page">トップ<span>HOME</span></a></li>
+            <li><a href="first.html">初めての方へ<span>FIRST</span></a></li>
+            <li><a href="menu.html">メニュー・料金<span>MENU</span></a></li>
+            <li><a href="about.html">院の紹介<span>ABOUT</span></a></li>
+            <li><a href="access.html">アクセス<span>ACCESS</span></a></li>
+            <li><a href="contact.html">予約・お問い合わせ<span>CONTACT</span></a></li>
+          </ul>
+          <div class="nav-cta">
+            <a class="btn btn-accent" href="contact.html#reserve"><svg aria-hidden="true"><use href="#i-calendar"/></svg>Web予約（初回3,980円）</a>
+            <a class="btn btn-outline" href="#" data-demo="tel"><svg aria-hidden="true"><use href="#i-tel"/></svg>電話で予約 000-0000-0000</a>
+          </div>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn-accent btn-sm header-cta" href="contact.html#reserve"><svg aria-hidden="true"><use href="#i-calendar"/></svg>Web予約</a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="global-nav">
+            <span class="menu-toggle-lines" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span class="menu-toggle-label">MENU</span>
+            <span class="visually-hidden">メニューを開く</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. ヒーロー -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <img src="images/hero.svg" alt="木漏れ日が差し込む明るい施術室" width="1600" height="900" fetchpriority="high" data-parallax>
+      </div>
+      <div class="komorebi" aria-hidden="true" data-komorebi>
+        <span class="sun"></span><span class="sun"></span><span class="sun"></span><span class="sun"></span><span class="sun"></span>
+        <span class="shade"><svg><use href="#i-branch"/></svg></span>
+      </div>
+      <span class="leaf leaf-1" aria-hidden="true" data-sway><svg><use href="#i-leaf"/></svg></span>
+      <span class="leaf leaf-2" aria-hidden="true" data-sway><svg><use href="#i-leaf2"/></svg></span>
+      <span class="leaf leaf-3" aria-hidden="true" data-sway><svg><use href="#i-leaf"/></svg></span>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <ul class="hero-badges" data-hero>
+            <li>平日21時まで</li>
+            <li>日曜も営業</li>
+            <li>駅徒歩3分</li>
+          </ul>
+          <h1 class="hero-title" id="hero-title">
+            <span class="line" data-hero>仕事帰りに、</span>
+            <span class="line" data-hero><em>からだ</em>をリセット。</span>
+          </h1>
+          <p class="hero-sub" data-hero>平日21時まで・駅徒歩3分。<br>デスクワークの肩こり・腰痛に、原因から向き合う整骨院です。</p>
+          <div class="hero-actions" data-hero>
+            <a class="btn btn-accent btn-arrow" href="contact.html#reserve">Web予約<small>（初回3,980円）</small></a>
+            <a class="btn btn-outline" href="first.html">初めての方へ</a>
+          </div>
+          <p class="open-status" data-open-status data-hero hidden><span class="open-status-dot" aria-hidden="true"></span><span class="open-status-label"></span><span class="open-status-note"></span></p>
+        </div>
+      </div>
+      <p class="hero-scroll" aria-hidden="true">SCROLL</p>
+      <div class="wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 40C240 80 480 0 720 30s480 50 720 10v40H0z" fill="currentColor"/></svg>
+      </div>
+    </section>
+
+    <!-- 2. お悩み -->
+    <section class="section" aria-labelledby="worry-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="section-en"><svg aria-hidden="true"><use href="#i-leaf"/></svg>WORRIES</p>
+          <h2 class="section-title" id="worry-title">こんなお悩みありませんか？</h2>
+        </div>
+        <ul class="worry-grid" data-reveal-group>
+          <li class="worry-card" data-reveal><span class="worry-icon" aria-hidden="true"><svg><use href="#w-shoulder"/></svg></span>長時間のPC作業で<br>肩がガチガチ</li>
+          <li class="worry-card" data-reveal><span class="worry-icon" aria-hidden="true"><svg><use href="#w-neck"/></svg></span>画面を見続けて<br>首がつらい</li>
+          <li class="worry-card" data-reveal><span class="worry-icon" aria-hidden="true"><svg><use href="#w-back"/></svg></span>座りっぱなしで<br>腰が重い</li>
+          <li class="worry-card" data-reveal><span class="worry-icon" aria-hidden="true"><svg><use href="#w-tired"/></svg></span>寝ても疲れが<br>抜けにくい</li>
+          <li class="worry-card" data-reveal><span class="worry-icon" aria-hidden="true"><svg><use href="#w-clock"/></svg></span>忙しくて<br>平日昼は通えない</li>
+          <li class="worry-card" data-reveal><span class="worry-icon" aria-hidden="true"><svg><use href="#w-repeat"/></svg></span>マッサージしても<br>すぐ戻ってしまう</li>
+        </ul>
+        <p class="worry-answer" data-reveal>
+          <svg class="worry-answer-arrow" aria-hidden="true"><use href="#i-down"/></svg>
+          そのお悩み、<mark>姿勢や体の使い方</mark>から<br class="sp-only">見直してみませんか？
+        </p>
+      </div>
+    </section>
+
+    <!-- 3. 選ばれる理由 -->
+    <section class="section section-sub" aria-labelledby="reason-title">
+      <div class="wave wave-top" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 50C300 10 520 70 760 40S1200 0 1440 30v50H0z" fill="currentColor"/></svg>
+      </div>
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="section-en"><svg aria-hidden="true"><use href="#i-leaf"/></svg>REASON</p>
+          <h2 class="section-title" id="reason-title">そよぎ整骨院が選ばれる理由</h2>
+        </div>
+        <ol class="reason-list">
+          <li class="reason-item">
+            <div class="reason-media" data-reveal>
+              <div class="img-frame"><img src="images/reason-01.svg" alt="夕暮れの駅前、仕事帰りの街並み" width="1200" height="900" loading="lazy"></div>
+              <p class="reason-num" aria-hidden="true"><small>REASON</small>01</p>
+            </div>
+            <div class="reason-body" data-reveal>
+              <h3 class="reason-title">平日21時まで・日曜も営業</h3>
+              <p>平日は21時まで（最終受付20:30）、土曜・日曜も営業しています。駅から徒歩3分なので、お仕事帰りやお休みの日にも立ち寄りやすい整骨院です。</p>
+            </div>
+          </li>
+          <li class="reason-item">
+            <div class="reason-media" data-reveal>
+              <div class="img-frame"><img src="images/reason-02.svg" alt="施術者が姿勢をチェックしている様子" width="1200" height="900" loading="lazy"></div>
+              <p class="reason-num" aria-hidden="true"><small>REASON</small>02</p>
+            </div>
+            <div class="reason-body" data-reveal>
+              <h3 class="reason-title">原因を探る、丁寧な検査と説明</h3>
+              <p>つらい場所だけでなく、姿勢や座り方などの体の使い方まで確認します。いまの状態と施術の内容をわかりやすくご説明し、納得していただいてから施術を始めます。</p>
+            </div>
+          </li>
+          <li class="reason-item">
+            <div class="reason-media" data-reveal>
+              <div class="img-frame"><img src="images/reason-03.svg" alt="施術者が肩まわりを施術している様子" width="1200" height="900" loading="lazy"></div>
+              <p class="reason-num" aria-hidden="true"><small>REASON</small>03</p>
+            </div>
+            <div class="reason-body" data-reveal>
+              <h3 class="reason-title">国家資格を持つ施術者が担当</h3>
+              <p>施術は、柔道整復師（ほねつぎの国家資格）を持つスタッフが担当します。お一人おひとりの状態に合わせて、無理のない施術を心がけています。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="wave wave-bottom" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 30C260 70 560 0 820 30s420 40 620 10v40H0z" fill="currentColor"/></svg>
+      </div>
+    </section>
+
+    <!-- 4. メニュー紹介 -->
+    <section class="section" aria-labelledby="menu-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="section-en"><svg aria-hidden="true"><use href="#i-leaf"/></svg>MENU</p>
+          <h2 class="section-title" id="menu-title">メニュー紹介</h2>
+          <p class="section-lead">お悩みに合わせて選べる整体メニューをご用意しています。</p>
+        </div>
+        <ul class="menu-grid">
+          <li class="menu-card" data-reveal>
+            <div class="img-frame"><img src="images/menu-shoulder.svg" alt="肩・首まわりの施術の様子" width="1200" height="900" loading="lazy"></div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title">肩こり・首こり集中整体</h3>
+              <p class="menu-card-text">デスクワークで固まった肩・首まわりを中心に整えます。</p>
+              <p class="menu-card-price">40分<strong>5,500<span>円</span></strong></p>
+            </div>
+          </li>
+          <li class="menu-card" data-reveal>
+            <div class="img-frame"><img src="images/menu-back.svg" alt="腰まわりの施術の様子" width="1200" height="900" loading="lazy"></div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title">腰痛ケア整体</h3>
+              <p class="menu-card-text">座りっぱなしで負担がかかる腰・お尻まわりを整えます。</p>
+              <p class="menu-card-price">40分<strong>5,500<span>円</span></strong></p>
+            </div>
+          </li>
+          <li class="menu-card" data-reveal>
+            <div class="img-frame"><img src="images/menu-posture.svg" alt="姿勢・骨盤まわりの施術の様子" width="1200" height="900" loading="lazy"></div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title">骨盤・姿勢矯正</h3>
+              <p class="menu-card-text">猫背や反り腰など、姿勢のクセにアプローチします。</p>
+              <p class="menu-card-price">40分<strong>6,000<span>円</span></strong></p>
+            </div>
+          </li>
+          <li class="menu-card" data-reveal>
+            <div class="img-frame"><img src="images/menu-stretch.svg" alt="ストレッチの施術の様子" width="1200" height="900" loading="lazy"></div>
+            <div class="menu-card-body">
+              <h3 class="menu-card-title">リフレッシュストレッチ</h3>
+              <p class="menu-card-text">全身を伸ばして疲れをほぐします。仕事帰りの気分転換に。</p>
+              <p class="menu-card-price">30分<strong>4,000<span>円</span></strong></p>
+            </div>
+          </li>
+        </ul>
+        <div class="offer-box" data-reveal>
+          <p class="offer-label">Web予約限定 初回特典</p>
+          <p class="offer-price">自費メニューが初回<strong>3,980</strong>円</p>
+          <p class="offer-note">※初検料込み・税込。保険施術は対象外です。</p>
+        </div>
+        <div class="section-foot" data-reveal>
+          <a class="btn btn-green btn-arrow" href="menu.html">メニュー・料金を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. 院長メッセージ -->
+    <section class="section section-sub" aria-labelledby="message-title">
+      <div class="wave wave-top" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 40C220 0 520 70 800 40S1240 10 1440 50v30H0z" fill="currentColor"/></svg>
+      </div>
+      <span class="leaf leaf-light" style="width:110px;height:110px;right:4%;top:2rem" aria-hidden="true" data-sway><svg><use href="#i-leaf2"/></svg></span>
+      <div class="container">
+        <div class="message">
+          <div class="message-photo" data-reveal>
+            <div class="img-frame"><img src="images/director.svg" alt="院長 青木拓真の写真" width="900" height="1200" loading="lazy"></div>
+          </div>
+          <div class="message-body" data-reveal>
+            <p class="section-en"><svg aria-hidden="true"><use href="#i-leaf"/></svg>MESSAGE</p>
+            <h2 class="message-title" id="message-title">こわばった体を、<br>風に揺れる葉のようにやわらかく。</h2>
+            <div class="message-text">
+              <p>はじめまして、院長の青木です。私自身、デスクワークの多い家族の肩こりや腰痛を身近で見てきました。忙しい毎日の中で、つらさを後回しにしてしまう方は少なくありません。</p>
+              <p>そよぎ整骨院では、つらい場所だけでなく「なぜそうなったのか」を一緒に考え、日常で続けられるセルフケアまでお伝えします。お仕事帰りに、どうぞ気軽にお立ち寄りください。</p>
+            </div>
+            <p class="message-sign"><small>院長／柔道整復師</small><strong>青木 拓真</strong></p>
+            <a class="btn btn-outline btn-arrow" href="about.html">院の紹介を見る</a>
+          </div>
+        </div>
+      </div>
+      <div class="wave wave-bottom" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 30C260 70 560 0 820 30s420 40 620 10v40H0z" fill="currentColor"/></svg>
+      </div>
+    </section>
+
+    <!-- 6. お客様の声 -->
+    <section class="section" aria-labelledby="voice-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="section-en"><svg aria-hidden="true"><use href="#i-leaf"/></svg>VOICE</p>
+          <h2 class="section-title" id="voice-title">お客様の声</h2>
+          <p class="voice-note">※掲載内容はすべて架空のサンプルです</p>
+        </div>
+        <ul class="voice-grid">
+          <li class="voice-card" data-reveal>
+            <div class="voice-head">
+              <span class="voice-avatar" aria-hidden="true"><svg><use href="#i-person"/></svg></span>
+              <div>
+                <h3 class="voice-title">仕事帰りに通えるのが助かります</h3>
+                <p class="voice-meta">40代・男性・会社員（架空のサンプル）</p>
+              </div>
+            </div>
+            <p>残業のあとでも21時まで開いているので、無理なく通えています。肩まわりが軽く感じる日が増え、パソコン作業の合間に教わったストレッチも続けています。</p>
+          </li>
+          <li class="voice-card" data-reveal>
+            <div class="voice-head">
+              <span class="voice-avatar" aria-hidden="true"><svg><use href="#i-person"/></svg></span>
+              <div>
+                <h3 class="voice-title">説明がていねいで安心できました</h3>
+                <p class="voice-meta">30代・女性・事務職（架空のサンプル）</p>
+              </div>
+            </div>
+            <p>初回に姿勢をチェックしてもらい、座り方のクセが腰の重さにつながっていると教えてもらいました。理由がわかったので、納得して施術を受けられました。</p>
+          </li>
+          <li class="voice-card" data-reveal>
+            <div class="voice-head">
+              <span class="voice-avatar" aria-hidden="true"><svg><use href="#i-person"/></svg></span>
+              <div>
+                <h3 class="voice-title">日曜に行けるのがありがたい</h3>
+                <p class="voice-meta">50代・男性・営業職（架空のサンプル）</p>
+              </div>
+            </div>
+            <p>平日はなかなか時間がとれないので、日曜の午前に通っています。院内が明るく落ち着いた雰囲気で、リラックスして過ごせるのも気に入っています。</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7. 営業時間・アクセス -->
+    <section class="section section-sub" aria-labelledby="info-title">
+      <div class="wave wave-top" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 50C300 10 520 70 760 40S1200 0 1440 30v50H0z" fill="currentColor"/></svg>
+      </div>
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="section-en"><svg aria-hidden="true"><use href="#i-leaf"/></svg>ACCESS</p>
+          <h2 class="section-title" id="info-title">営業時間・アクセス</h2>
+        </div>
+        <div class="info-grid">
+          <div data-reveal>
+            <table class="hours-table">
+              <caption class="visually-hidden">営業時間表（●営業 ▲時間変更あり －休み）</caption>
+              <thead>
+                <tr><th scope="col">受付時間</th><th scope="col">月</th><th scope="col">火</th><th scope="col">水</th><th scope="col">木</th><th scope="col">金</th><th scope="col">土</th><th scope="col">日</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">10:00〜13:00</th>
+                  <td class="is-open">●</td><td class="is-open">●</td><td class="is-open">●</td><td class="is-closed">－</td><td class="is-open">●</td><td class="is-part">▲</td><td class="is-part">▲</td>
+                </tr>
+                <tr>
+                  <th scope="row">15:00〜21:00</th>
+                  <td class="is-open">●</td><td class="is-open">●</td><td class="is-open">●</td><td class="is-closed">－</td><td class="is-open">●</td><td class="is-part">▲</td><td class="is-closed">－</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="hours-notes">
+              <li><span class="mark-part">▲</span> 土曜 9:00〜17:00 ／ 日曜 9:00〜14:00（お昼休みなし）</li>
+              <li>平日の最終受付は20:30です。</li>
+              <li>定休日：木曜・祝日</li>
+            </ul>
+          </div>
+          <div data-reveal>
+            <dl class="info-list">
+              <div><dt>住所</dt><dd>〒000-0000<br>緑ヶ丘市 若葉町2-8-15 そよかぜビル1F</dd></div>
+              <div><dt>最寄駅</dt><dd>緑ヶ丘駅 東口 徒歩3分</dd></div>
+              <div><dt>駐車場</dt><dd>なし（近隣にコインパーキングあり）</dd></div>
+              <div><dt>お支払い</dt><dd>現金、クレジットカード、QRコード決済</dd></div>
+            </dl>
+            <div class="info-map">
+              <div class="img-frame"><img src="images/map.svg" alt="緑ヶ丘駅東口から院までのイラスト地図" width="1600" height="900" loading="lazy"></div>
+            </div>
+            <div class="info-actions">
+              <a class="btn btn-outline btn-arrow" href="access.html">アクセスの詳細を見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. 予約CTA -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="wave wave-cap" aria-hidden="true">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0 40C240 80 480 0 720 30s480 50 720 10v40H0z" fill="currentColor"/></svg>
+      </div>
+      <span class="leaf leaf-1" aria-hidden="true" data-sway><svg><use href="#i-leaf"/></svg></span>
+      <span class="leaf leaf-2" aria-hidden="true" data-sway><svg><use href="#i-leaf2"/></svg></span>
+      <div class="container">
+        <div data-reveal>
+          <p class="section-en"><svg aria-hidden="true"><use href="#i-leaf"/></svg>RESERVATION</p>
+          <h2 class="cta-title" id="cta-title">まずは一度、<br class="sp-only">からだの状態を<br class="sp-only">確かめにきませんか。</h2>
+          <p class="cta-lead">ご予約優先制です。空きがあれば当日のご案内もできます。</p>
+        </div>
+        <div class="cta-offer" data-reveal>
+          <p class="cta-offer-label">Web予約限定 初回特典</p>
+          <p class="cta-offer-price"><s>通常 5,000〜7,000円</s>初回 <strong>3,980</strong>円</p>
+          <p class="cta-offer-note">※自費メニュー・初検料込み・税込</p>
+        </div>
+        <div class="cta-buttons" data-reveal>
+          <a class="btn cta-tel" href="#" data-demo="tel">
+            <span class="tel-num"><svg aria-hidden="true"><use href="#i-tel"/></svg>000-0000-0000</span>
+            <small>電話で予約する</small>
+          </a>
+          <a class="btn btn-accent" href="contact.html#reserve"><svg aria-hidden="true"><use href="#i-calendar"/></svg>Web予約（24時間受付）</a>
+          <a class="btn btn-line" href="#" data-demo="line"><svg aria-hidden="true"><use href="#i-line"/></svg>LINEで予約する</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="logo footer-logo" href="index.html" aria-label="そよぎ整骨院・整体院 トップページ">
+            <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+              <circle cx="32" cy="32" r="30" fill="#DCEBDD"/>
+              <path d="M33 52C19 46 15 33 19 18c11 2 25 8 28 20 1 6-4 11-14 14z" fill="#6BA37A"/>
+              <path d="M31 48c-3-10-5-19-10-27" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+            </svg>
+            <span class="logo-text">
+              <span class="logo-name">そよぎ整骨院・整体院</span>
+              <span class="logo-en">SOYOGI SEIKOTSUIN</span>
+            </span>
+          </a>
+          <address class="footer-info">
+            〒000-0000 緑ヶ丘市 若葉町2-8-15 そよかぜビル1F<br>
+            緑ヶ丘駅 東口 徒歩3分<br>
+            TEL：000-0000-0000（ダミー）
+          </address>
+          <p class="footer-hours">平日 10:00〜13:00／15:00〜21:00　土 9:00〜17:00　日 9:00〜14:00<br>定休日：木曜・祝日</p>
+        </div>
+        <nav class="footer-nav" aria-label="フッターメニュー">
+          <ul>
+            <li><a href="index.html">トップ</a></li>
+            <li><a href="first.html">初めての方へ</a></li>
+            <li><a href="menu.html">メニュー・料金</a></li>
+            <li><a href="about.html">院の紹介</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="contact.html">予約・お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-disclaimer">※このサイトはポートフォリオ用に制作した架空の整骨院サイトです。実在の店舗・人物・団体とは関係ありません。</p>
+      <p class="copyright"><small>&copy; 2026 SOYOGI Seikotsuin (Fictional)</small></p>
+    </div>
+  </footer>
+
+  <div class="fixed-cta" id="fixed-cta">
+    <a class="btn btn-outline" href="#" data-demo="tel"><svg aria-hidden="true"><use href="#i-tel"/></svg>電話</a>
+    <a class="btn btn-accent" href="contact.html#reserve"><svg aria-hidden="true"><use href="#i-calendar"/></svg>Web予約</a>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animation.js"></script>
+</body>
+</html>
