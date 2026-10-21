@@ -1,0 +1,19 @@
+そよぎ整骨院・整体院（ポートフォリオ用の架空サイト）
+
+■ 公開サイト
+https://penguin08xx.github.io/soyogi-seikotsuin/
+
+■ 各ページ
+トップ             https://penguin08xx.github.io/soyogi-seikotsuin/index.html
+初めての方へ       https://penguin08xx.github.io/soyogi-seikotsuin/first.html
+メニュー・料金     https://penguin08xx.github.io/soyogi-seikotsuin/menu.html
+院の紹介           https://penguin08xx.github.io/soyogi-seikotsuin/about.html
+アクセス           https://penguin08xx.github.io/soyogi-seikotsuin/access.html
+予約・お問い合わせ https://penguin08xx.github.io/soyogi-seikotsuin/contact.html
+
+■ GitHub リポジトリ（ソースコード）
+https://github.com/penguin08xx/soyogi-seikotsuin
+
+■ メモ
+・全ページ noindex 設定済み（検索結果には出ません）
+・更新するときは main ブランチに push すると、数分で公開サイトに反映されます
