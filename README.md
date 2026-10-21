@@ -3,7 +3,7 @@
 デスクワークで肩こり・腰痛に悩む30〜50代の会社員をターゲットにした、**架空の地元密着型 整骨院**のホームページです。
 Web制作のポートフォリオとして制作しました。院名・住所・電話番号・人物はすべて架空です。
 
-- 公開URL：https://riku08xx.github.io/soyogi-seikotsuin/ （検索結果には出ないよう noindex 設定済み）
+- 公開URL：https://penguin08xx.github.io/soyogi-seikotsuin/ （検索結果には出ないよう noindex 設定済み）
 - 仕様書：[docs/SPEC.md](docs/SPEC.md)
 - 技術：HTML / CSS / JavaScript（フレームワーク・ビルドなし）、GSAP + ScrollTrigger（CDN）、Google Fonts
 
@@ -131,7 +131,7 @@ python -m http.server 8080
 4. 「Build and deployment」の Source を「Deploy from a branch」、Branch を `main` ／ `/ (root)` にして「Save」
 5. 数分後、`https://ユーザー名.github.io/soyogi-seikotsuin/` で公開されます
 
-> このサイトは上の手順で https://riku08xx.github.io/soyogi-seikotsuin/ に公開済みです。
+> このサイトは上の手順で https://penguin08xx.github.io/soyogi-seikotsuin/ に公開済みです。
 > 更新するときは、変更を `main` ブランチに push すると数分で反映されます。
 
 ### OGP（SNS共有時の表示）の設定
@@ -139,8 +139,8 @@ SNSは相対パスを読めないため、各HTMLの `<head>` にある次の2�
 公開先やリポジトリ名を変えた場合は、ここも書き換えてください。
 
 ```html
-<meta property="og:url" content="https://riku08xx.github.io/soyogi-seikotsuin/index.html">
-<meta property="og:image" content="https://riku08xx.github.io/soyogi-seikotsuin/images/ogp.png">
+<meta property="og:url" content="https://penguin08xx.github.io/soyogi-seikotsuin/index.html">
+<meta property="og:image" content="https://penguin08xx.github.io/soyogi-seikotsuin/images/ogp.png">
 ```
 
 ### 代替：Netlify
